@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<br>
+	<body>
+		<p>Click following button to see the change</p>
+		<input type='text'/>
+		<p id='btn1' onclick='show_paragraph()'>Show Me</p>
+		<button id='btn2' onclick='show_paragraph()'>Show Me</button>
+		<button id='btn3' onclick='show_paragraph()'>Show Me</button>
+		<br>
+		<div id='paragraph1' style='display: none; margin-bottom: 20px'>1</div>
+		<div id='paragraph2' style='display: none; margin-bottom: 20px'>2</div>
+		<div id='paragraph3' style='display: none; margin-bottom: 20px'>3</div>
+
+	</body>
+</html>
+
+<script>
+function show_paragraph(){
+	var x = document.getElementById('paragraph1');
+	x.style.display = 'block';
+}
+</script>

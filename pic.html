@@ -5,6 +5,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <style>
@@ -63,7 +64,7 @@ ul {
   z-index: 1;
 }
 .dropdown:hover .dropdown-content {
-  display: block;
+  display: inline-block;
 }
 .dropdown-content2 {
   display: none;
@@ -82,6 +83,34 @@ ul {
 .linkdrop:hover .dropdown-content2 {
   display: block;
 }
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  margin: 50px 20px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.ig {
+  text-align: center;
+}
+.fb {
+  text-align: center;
+}
 </style>
 </head>
 <body>
@@ -93,18 +122,22 @@ ul {
 </div>
 
 <div class="row content">
-  <div class="col-lg-3 col-md-3 col-sm-3 sidebar">
+  <div class="col-lg-3 col-md-3 col-sm-12 sidebar">
     <div class="linkdrop" align="center" style="margin-top: 50px;">
       <button class="dropbtn">About me</button>
       <div class="dropdown-content2">
         <a href="https://markleong88.github.io">Introduction</a><br>
         <a href="https://markleong88.github.io/sch.html">School</a><br>
         <a href="https://markleong88.github.io/pic.html">Pictures</a><br>
-       </div>
+      </div>
+    </div>
+    <div align="center" style="margin-top: 50px;"> 
+      <a target="_blank" href="https://www.facebook.com/leong.jianbing" class="fa fa-facebook" ></a>
+      <a target="_blank" href="https://www.instagram.com/jian_bing/" class="fa fa-instagram" ></a>
     </div>
   </div>
 
-  <div class="col-lg-9 col-md-9">
+  <div class="col-lg-9 col-md-9 col-sm-12">
     <div class="col-lg-4 col-md-4 gallery dropdown">
       <img src="https://scontent-hkg3-2.xx.fbcdn.net/v/t31.0-8/24837473_1797858036899710_2742630364317708206_o.jpg?_nc_cat=110&_nc_ht=scontent-hkg3-2.xx&oh=9ce5ead486146c6a0c47c453678b8b5f&oe=5CDF6FA0" width="150px" height="150px">
      <div class="dropdown-content">
@@ -128,12 +161,12 @@ ul {
     </div>
   </div>
 </div>
-
 <div class="row footer">
   <div class="col-lg-12">
     <h5>&#169; Copyright by Mark Leong</h5>
   </div>
 </div>
+
 
 </body>
 </html>
